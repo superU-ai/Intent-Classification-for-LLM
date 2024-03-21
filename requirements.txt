@@ -1,0 +1,7 @@
+pandas==1.5.3
+scikit-learn==1.2.2
+torch==2.1.0+cu121
+transformers==4.38.1
+sentence_transformers==2.2.2
+openai==0.28.0
+regex==2.2.1
