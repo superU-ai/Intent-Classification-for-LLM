@@ -87,10 +87,11 @@ Tag_generator = Tag_generator(openai)
 
 # AI suggested solution
 AI_suggested_solution = "Ah, wrinkles on the fingers can be due to various reasons such as aging, dehydration, or prolonged exposure to water. To help with this, it's important to keep your skin moisturized. Using a hydrating hand cream regularly can improve the skin's elasticity. Also, ensure you're staying well-hydrated by drinking plenty of water throughout the day.\nHave you noticed any changes in your skin texture or is it just the wrinkles that are concerning you?"
-c0, c1, c2, c3, t0, t1, t2, t3 = Tag_generator.main(AI_suggested_solution)
+c0, c1, c2, c3, t0, t1, t2, t3, product_features = Tag_generator.main(AI_suggested_solution)
 
 tags_for_Product = c0 + " -> " + c1 + " -> " + c2 + " -> " + c3
-print(tags_for_Product)
+print("Tags generated: ", tags_for_Product)
+print("Product Features: ", product_features)
 ```
 
 ## Contributing
